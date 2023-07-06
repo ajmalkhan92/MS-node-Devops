@@ -21,7 +21,7 @@ const authenticateJWT = (req, res, next) => {
       }
     } catch (err) {
       console.log(err);
-      return res.sendStatus(403); // Invalid token
+      return res.sendStatus(401); // Invalid token
     }
   } else {
     res.sendStatus(401); // No or invalid Bearer token

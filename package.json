@@ -4,8 +4,8 @@
   "description": "This contains sample request to https://jsonplaceholder.typicode.com/ API's for learning purposes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node ./src/users/server.js"
+    "test": "jest",
+    "start": "node ./src/users/server.js"
   },
   "author": "Ajmalkhan",
   "license": "ISC",
@@ -20,5 +20,8 @@
     "axios": "^0.23.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1"
   }
 }
