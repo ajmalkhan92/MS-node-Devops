@@ -1,0 +1,16 @@
+# Node.js
+node_modules/
+dist/
+.env
+
+# Postman
+*.postman_environment.json
+*.postman_collection.json
+
+# Editor and IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+*.log

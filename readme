@@ -1,0 +1,37 @@
+# JWT Auth Microservice
+
+This is a sample microservice built with Node.js that demonstrates JWT authentication. It provides an API endpoint that requires JWT authentication to access data from an external API(https://jsonplaceholder.typicode.com/users).
+
+## Features
+
+- JWT authentication using a secret key
+- Forwarding the JWT token to an external API
+- Issuer based authorization
+
+## Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn package manager
+
+## Getting Started
+
+1. Clone the repository:
+
+```shell
+git clone <repository_url>
+```
+2. Install the dependencies:
+```shell
+cd jwt-auth-microservice
+npm install
+```
+3. Set the Secret Key:
+Replace 'your-secret-key' in the secrets/secret.js file with your own secret key.
+
+4. Start the microservice:
+npm start
+The microservice will start running on http://localhost:3000.
+
+5. To Test the microservice
+- Import the postman collection and environment under /collections
+- Replace the secret key with the one provided in secret.js
