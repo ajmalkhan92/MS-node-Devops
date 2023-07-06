@@ -20,7 +20,6 @@ const authenticateJWT = (req, res, next) => {
         return res.sendStatus(403); // Invalid issuer or id
       }
     } catch (err) {
-      console.log(err);
       return res.sendStatus(401); // Invalid token
     }
   } else {
